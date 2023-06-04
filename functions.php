@@ -48,9 +48,9 @@ function template_header($title,$name) {
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="menu.php" class="nav-link">Menu</a></li>
-                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="services.php" class="nav-link">Services</a></li>
                             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="feedback.php" class="nav-link">Feedback</a></li>
                             <li class="nav-item"><a href="index.php?logout='1'" class="nav-link">Logout</a></li>
                         </ul>
                     </div>
@@ -94,6 +94,25 @@ function template_footer() {
                 </div>
             <div class="credit"> created by <span> (Atharva, Santosh, Shubham, Pratik) </span> | all rights reserved!|</div>
         </section>
+        <div class="modal fade" id="feedback_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
     EOT;
     }
 ?>

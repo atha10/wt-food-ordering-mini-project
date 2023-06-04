@@ -14,6 +14,7 @@ if (!$conn) {
     if (mysqli_num_rows($results) == 1) {
       $user = mysqli_fetch_assoc($results);
       $_SESSION['name'] = $user['name'];
+      $_SESSION['user_id'] = $user['id'];
   	  $_SESSION['success'] = "You are now logged in";
       header('location: index.php');
     } else {
